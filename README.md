@@ -26,6 +26,17 @@ Hours:
 -- https://www.cryptocompare.com/api/#-api-data-histohour-
 ```
 
+## To-do List
+
+```
+-- Detail View for Individual Cryptocurrency (for Standard and Search List)
+
+-- Graph Days & Hours
+
+-- Loading Animation/Effect
+
+```
+
 ## Build Setup
 
 ``` bash
