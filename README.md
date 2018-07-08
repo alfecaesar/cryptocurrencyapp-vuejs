@@ -1,10 +1,16 @@
 # cryptocurrencyapp
 
-> Cryptocurrency App | Vue.js Project | Author: Alfe Caesar Lagas
+> Cryptocurrency App | A Vue.js Project | Author: [Alfe Caesar Lagas](http://alfecaesar.com)
+
+
+## Demo
+
+[View App Demo](https://crytocurrencyapp-vuejs.herokuapp.com/)
 
 
 ## API Data
 
+```
 Listing: 
 -- https://api.udilia.com/coins/v1/cryptocurrencies?page=1&perPage=20
 
@@ -18,7 +24,7 @@ Days:
 
 Hours: 
 -- https://www.cryptocompare.com/api/#-api-data-histohour-
-
+```
 
 ## Build Setup
 
