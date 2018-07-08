@@ -5,13 +5,19 @@
 
 ## API Data
 
-Listing: https://api.udilia.com/coins/v1/cryptocurrencies?page=1&perPage=20
+Listing: 
+-- https://api.udilia.com/coins/v1/cryptocurrencies?page=1&perPage=20
 
-Search: https://api.udilia.com/coins/v1/autocomplete?searchQuery=
+Search: 
+-- https://api.udilia.com/coins/v1/autocomplete?searchQuery=
 
-Chart
-Days: https://www.cryptocompare.com/api/#-api-data-histoday-  
-Hours: https://www.cryptocompare.com/api/#-api-data-histohour-
+Chart Data
+
+Days: 
+-- https://www.cryptocompare.com/api/#-api-data-histoday-  
+
+Hours: 
+-- https://www.cryptocompare.com/api/#-api-data-histohour-
 
 
 ## Build Setup
