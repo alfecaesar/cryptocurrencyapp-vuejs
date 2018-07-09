@@ -5,6 +5,10 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Posts from './components/CryptoList'
 import CryptoDetail from './components/CryptoDetail'
+import VueChartkick from 'vue-chartkick'
+import Chart from 'chart.js'
+
+Vue.use(VueChartkick, {adapter: Chart})
 
 
 Vue.use(VueRouter)

@@ -12,7 +12,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="crypto-container" v-for="(post,key,index) in posts" v-on:click="detailView($event)">
+                    <tr id="crypto-container" v-for="(post,key,index) in posts" >
                         <td><span class="rankSign">{{posts[key].rank}}</span> {{posts[key].name}}</td>
                         <td><span class="dollarSign">$</span> {{posts[key].price}}</td>
                         <td><span class="dollarSign">$</span>{{posts[key].marketCap}}</td>
