@@ -7,7 +7,8 @@
                         <th width="40%">Cryptocurrency</th>
                         <th width="20%">Price</th>
                         <th width="20%">Market</th>
-                        <th width="20%">24H</th>
+                        <th width="10%">24H</th>
+                        <th width="10%"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -16,6 +17,9 @@
                         <td><span class="dollarSign">$</span> {{posts[key].price}}</td>
                         <td><span class="dollarSign">$</span>{{posts[key].marketCap}}</td>
                         <td>{{posts[key].percentChange24h}}</td>
+                        <th width="10%">
+                            <router-link :to="{ name: 'CryptoDetail', params: { id: posts[key].id, name: posts[key].name, rank: posts[key].rank, price: posts[key].price, marketcap: posts[key].marketCap, percentchange: posts[key].percentChange24h }}">View</router-link>
+                        </th>
                     </tr>
                 </tbody>
             </table>
@@ -42,7 +46,7 @@
     import axios from 'axios'
     
     export default{
-        name: 'CryptoList',
+        name: 'CryptoList', 
         data(){
             return{
                 posts:[],
@@ -73,9 +77,6 @@
                 axios.get('https://api.udilia.com/coins/v1/cryptocurrencies?page='+this.currentPage+'&perPage=20').then(posts=>{
                      this.posts = posts.data.currencies
                 });
-            }, 
-            detailView: function(e){
-                // go to detail view
             }
         }
     }

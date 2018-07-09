@@ -35,7 +35,8 @@
                         <th width="40%">Cryptocurrency</th>
                         <th width="20%">Price</th>
                         <th width="20%">Market</th>
-                        <th width="20%">24H</th>
+                        <th width="10%">24H</th>
+                        <th width="10%"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,15 +45,18 @@
                         <td><span class="dollarSign">$</span> {{posts[key].price}}</td>
                         <td><span class="dollarSign">$</span>{{posts[key].marketCap}}</td>
                         <td>{{posts[key].percentChange24h}}</td>
+                        <th width="10%">
+                            <router-link :to="{ name: 'CryptoDetail', params: { cRank: posts[key].rank }}">View</router-link>
+                        </th>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
         
-    <CryptoList v-if="searchText == '' && !displayCryptoDetail"  />  
+    <router-view><CryptoList v-if="searchText == ''"  /></router-view>
         
-    <CryptoDetail v-if="displayCryptoDetail == true && displayCryptoDetail" />  
+
         
     </div>
 </template>
@@ -60,8 +64,7 @@
 <script>
     import CryptoList from './components/CryptoList'
     import CryptoDetail from './components/CryptoDetail'
-    import axios from 'axios'
-    
+    import axios from 'axios'    
    
 
     export default {
