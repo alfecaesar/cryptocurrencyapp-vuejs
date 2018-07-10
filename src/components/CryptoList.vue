@@ -18,7 +18,7 @@
                         <td><span class="dollarSign">$</span>{{posts[key].marketCap}}</td>
                         <td>{{posts[key].percentChange24h}}</td>
                         <th width="10%">
-                            <router-link :to="{ name: 'CryptoDetail', params: { id: posts[key].id, name: posts[key].name, rank: posts[key].rank, price: posts[key].price, marketcap: posts[key].marketCap, percentchange: posts[key].percentChange24h }}">View</router-link>
+                            <router-link :to="{ name: 'CryptoDetail', path: '/cryptodetail/:id', params: { id: posts[key].id, name: posts[key].name, rank: posts[key].rank, price: posts[key].price, marketcap: posts[key].marketCap, percentchange: posts[key].percentChange24h }}">View</router-link>
                         </th>
                     </tr>
                 </tbody>

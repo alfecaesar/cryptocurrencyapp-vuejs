@@ -20,7 +20,7 @@ const routes = [
         component: Posts   
     },
     {
-        path: '/cryptodetail', 
+        path: '/cryptodetail/:id', 
         name: 'CryptoDetail',
         component: CryptoDetail,
         props: true
